@@ -17,6 +17,10 @@
 /* #Site Styles
 ================================================== */
 
+body{
+	
+	-webkit-font-smoothing:antialiased;
+}
 
 ::selection{
 	background:blue;
@@ -79,7 +83,7 @@ h1 {
 	p, li{
 		font-family:times;
 		font-size:24px;
-		color:blue;
+		/*color:rgb(230,230,230);*/
 	}
 
 
@@ -184,7 +188,7 @@ h1 {
 	p{
 		margin:0px;
 		text-indent: 1em;
-		color:blue;
+		
 	}
 
 	p:first-child{
@@ -212,10 +216,12 @@ h1 {
 		color:blue;
 		border:6px solid blue;
 		font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
-	font-weight: 700; 
-	font-style: normal;
-	font-size:600px;
-	margin-top:0.2em;
+		font-weight: 700; 
+		font-style: normal;
+		font-size:600px;
+		margin-top:0.2em;
+		-webkit-box-sizing:border-box;
+	/*	padding:0em 0em;*/
 
 	}
 
@@ -310,11 +316,19 @@ h1 {
 			display:none;
 		}
 
+		#description{
+			margin-top:200%;
+		}
+
 		.intro{
 			top:4em;
 		}
 		.apply{
 			font-size:200px;
+		}
+
+		p, li{
+			font-size:18px;
 		}
 	}
 
