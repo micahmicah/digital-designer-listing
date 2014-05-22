@@ -103,7 +103,7 @@ h1 {
 	}
 
 	h2:after{
-		content:"HELP WANTED";
+		content:"HELP WANTED!";
 		position:fixed;
 		font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
 		font-weight: 700; 
@@ -114,9 +114,26 @@ h1 {
 		display:block;
 		padding:20px 40px;
 		border:6px solid blue;
+		background:white;
 		top:-0.5em;
 		-webkit-transform:rotate(60deg);
 	}
+
+/*	h2:before{
+		content:"HELP WANTED";
+		position:fixed;
+		font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
+		font-weight: 700; 
+		font-style: normal;
+		font-size:100px;
+		line-height:1.125em;
+		z-index:-1;
+		display:block;
+		padding:20px 40px;
+		border:6px solid blue;
+		top:-0.5em;
+		-webkit-transform:rotate(10deg);
+	}*/
 
 	h2 .small-cap{
 		font-family: 'Mercury Display sc A', 'Mercury Display sc B'; font-weight: 700; font-style: normal;
@@ -173,6 +190,20 @@ h1 {
 /* #Media Queries
 ================================================== */
 
+	@media only screen and (min-width:1800px){
+		body{
+			
+		}
+
+		h2:after{
+			font-size:400px;
+		}
+
+		h1{
+			font-size:600px;
+		}
+	}
+
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {}
 
@@ -194,6 +225,10 @@ h1 {
 
 		h2{
 			font-size:24px;
+		}
+
+		h2:after{
+			font-size:140px;
 		}
 
 		.intro{
