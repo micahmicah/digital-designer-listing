@@ -18,7 +18,7 @@
 ================================================== */
 
 body{
-	
+	background:#fcfaed;
 	-webkit-font-smoothing:antialiased;
 }
 
@@ -83,6 +83,7 @@ h1 {
 	p, li{
 		font-family:times;
 		font-size:24px;
+		color:blue;
 		/*color:rgb(230,230,230);*/
 	}
 
@@ -165,6 +166,9 @@ h1 {
 		-webkit-transform:rotate(90deg);
 		-webkit-transform-origin:0% 50%;
 		pointer-events:none;
+		border-left:2px solid blue;
+		border-right:2px solid blue;
+		padding:0em 1em;
 	}
 
 	p em{
