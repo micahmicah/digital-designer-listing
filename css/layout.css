@@ -18,6 +18,10 @@
 ================================================== */
 
 
+::selection{
+	background:blue;
+	color:white;
+}
 
 h1 { font-family:"Value Serif Regular", helvetica, serif; font-weight:600; font-style:normal; }
 
