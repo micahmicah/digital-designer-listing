@@ -273,6 +273,17 @@ h1 {
 		.apply{
 			font-size:300px;
 		}
+
+		h2{
+			font-size:28px;
+		}
+
+		h2:after{
+			font-size:180px;
+		}
+		body{
+			background:yellow;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -285,6 +296,7 @@ h1 {
 		h2{
 			font-size:24px;
 		}
+
 
 		h2:after{
 			font-size:140px;

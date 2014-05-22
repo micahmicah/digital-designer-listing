@@ -9,6 +9,10 @@
 			intro_toggle();
 		});
 
+		$(window).on('touchmove', function(){
+			intro_toggle();
+		});
+
 		$(window).resize(function(){
 			intro_bottom = $('.intro h2')[0].getBoundingClientRect().bottom;
 			intro_toggle();
