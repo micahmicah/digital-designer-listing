@@ -75,6 +75,7 @@ h1 {
 	p, li{
 		font-family:times;
 		font-size:24px;
+		color:blue;
 	}
 
 
@@ -148,12 +149,14 @@ h1 {
 		z-index:-1;
 		font-size:24px;
 		letter-spacing: 1px;
+		display:inline-block;
 		left:2em;
 		top:35%;
 		color:blue;
 		font-family: 'Mercury Text G1 sc A', 'Mercury Text G1 sc B'; font-weight: 400; font-style: normal;
 		-webkit-transform:rotate(90deg);
 		-webkit-transform-origin:0% 50%;
+		pointer-events:none;
 	}
 
 	p em{
@@ -174,14 +177,50 @@ h1 {
 
 	}
 
-	li a:link{
+	p{
+		margin:0px;
+		text-indent: 1em;
+		color:blue;
+	}
+
+	p:first-child{
+		text-indent:0em;
+	}
+
+
+
+	li a:link, li a:visited{
 		text-decoration:none;
+		color:blue;
 
 	}
 
 	li a:hover{
-		background:yellow;
+		background:rgb(245,245,245);
 
+	}
+	
+
+	.apply{
+		display:block;
+		text-align:center;
+		width:100%;
+		color:blue;
+		border:6px solid blue;
+		font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
+	font-weight: 700; 
+	font-style: normal;
+	font-size:600px;
+	margin-top:0.2em;
+
+	}
+
+	.apply:link{
+		text-decoration:none;
+	}
+
+	.apply:active{
+		-webkit-transform:scale(0.75);
 	}
 
 /* #Page Styles
@@ -192,7 +231,7 @@ h1 {
 
 	@media only screen and (min-width:1800px){
 		body{
-			
+		
 		}
 
 		h2:after{
@@ -208,13 +247,33 @@ h1 {
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		body{
+
+		}
+		h2:after{
+			font-size:200px;
+		}
+		.apply{
+			font-size:400px;
+		}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		.apply{
+			font-size:400px;
+		}
+
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+		.apply{
+			font-size:300px;
+		}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
@@ -231,6 +290,10 @@ h1 {
 			font-size:140px;
 		}
 
+		h3{
+			display:none;
+		}
+		
 		.intro{
 			top:4em;
 		}

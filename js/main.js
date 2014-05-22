@@ -3,13 +3,13 @@
 	   	$(window).scroll( function (){
 			if ($(window).scrollTop() > 900){
 
-			$('.intro').css('opacity', '0');
+			$('.intro').css('display', 'none');
 			$('h1').css('color','orange');
 		
 
 			} else {
 
-			$('.intro').css('opacity', '1');
+			$('.intro').css('display', 'block');
 			$('h1').css('color','blue')
 			
 			}
