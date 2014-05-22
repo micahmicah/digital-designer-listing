@@ -2,7 +2,7 @@
 
 		var description_top;
 	   	
-		var apply_top;
+		var apply_bottom;
 
 
 		$(window).scroll( function(){
@@ -30,8 +30,8 @@
 		}
 
 		function apply_toggle(){
-			apply_top = $('.apply')[0].getBoundingClientRect().top;
-			if(apply_top < 200 ){
+			apply_bottom = $('.apply')[0].getBoundingClientRect().bottom;
+			if(apply_bottom < window.innerHeight ){
 				$('.apply').css('background','red').css('background','blue').css('color', 'white');
 			} else{
 				$('.apply').css('background', 'none').css('color','blue');
