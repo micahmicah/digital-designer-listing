@@ -1,0 +1,200 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+
+
+h1 { font-family:"Value Serif Regular", helvetica, serif; font-weight:600; font-style:normal; }
+
+/*h1{
+	font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
+	font-weight: 700; 
+	font-style: normal;
+	font-size:400px;
+	line-height:0.75em;
+	margin:0px;
+	border-bottom:20px solid blue;
+	color:blue;
+	display:inline-block;
+}*/
+
+
+h1 {
+	font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
+	font-weight: 700; 
+	font-style: normal;
+	font-size:340px;
+	line-height:0.75em;
+	color:blue;
+	z-index:100;
+ }
+
+	h1{
+		position:fixed;
+	}
+
+	h1 span{
+		position:fixed;
+	}
+
+	.r{
+		top:0em;
+		left:0em;
+	}
+
+	.i{
+		top:0em;
+		right:0em;
+	}
+
+	.s{
+		bottom:0em;
+		left:0em;
+	}
+
+	.d{
+		bottom:0em;
+		right:0em;
+	}
+
+	p, li{
+		font-family:times;
+		font-size:24px;
+	}
+
+
+	.intro{
+		position:fixed;
+		top:12em;
+		-webkit-transform:rotate(-30deg);
+
+	}
+
+	#description{
+		margin-top:150%;
+	}
+
+	h2{
+		/*font-family:times;*/
+		font-size:42px;
+		line-height:1.125em;
+		color:blue;
+		/*font-weight:normal;*/
+		font-family: 'Mercury Display A', 'Mercury Display B'; font-weight: 700; font-style: normal;
+		letter-spacing:0.0125em;
+		border:6px solid blue;
+		padding:0.5em;
+	}
+
+	h2 .small-cap{
+		font-family: 'Mercury Display sc A', 'Mercury Display sc B'; font-weight: 700; font-style: normal;
+	}
+
+	.small-cap{
+		font-family: 'Mercury Text G1 sc A', 'Mercury Text G1 sc B'; font-weight: 400; font-style: normal;
+	}
+
+	h3{
+		position:fixed;
+		z-index:-1;
+		left:2em;
+		top:40%;
+		-webkit-transform:rotate(90deg);
+		-webkit-transform-origin:0% 50%;
+	}
+
+	p em{
+		font-style:normal;
+		border-bottom:1px dotted blue;
+	}
+
+	ul{
+		list-style:none;
+		padding:0;
+	}
+
+	ul li a{
+		display:block;
+		border-bottom:1px dotted blue;
+		padding:0.125em 0.5em;
+		margin-left:-0.5em;
+
+	}
+
+	li a:link{
+		text-decoration:none;
+
+	}
+
+	li a:hover{
+		background:yellow;
+
+	}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		h1{
+			font-size:90px;
+		}
+
+		h2{
+			font-size:24px;
+		}
+
+		.intro{
+			top:4em;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
