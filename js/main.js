@@ -17,6 +17,11 @@
 		})
 
 
+			
+
+
+
+
 		$(window).scroll( function (){
 			if ($(window).scrollTop() > 1200){
 
