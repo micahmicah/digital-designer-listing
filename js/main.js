@@ -2,11 +2,12 @@
 
 		var description_top;
 	   	
-
+		var apply_top;
 
 
 		$(window).scroll( function(){
 			intro_toggle();
+			apply_toggle();
 		});
 
 		$(window).on('touchmove', function(){
@@ -25,6 +26,15 @@
 				$('.intro').css('display', 'none');
 			} else{
 				$('.intro').css('display', 'block');
+			}
+		}
+
+		function apply_toggle(){
+			apply_top = $('.apply')[0].getBoundingClientRect().top;
+			if(apply_top < 200 ){
+				$('.apply').css('background','red').css('background','blue').css('color', 'white');
+			} else{
+				$('.apply').css('background', 'none').css('color','blue');
 			}
 		}
 
