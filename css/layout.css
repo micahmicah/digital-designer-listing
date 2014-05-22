@@ -293,9 +293,12 @@ h1 {
 		h3{
 			display:none;
 		}
-		
+
 		.intro{
 			top:4em;
+		}
+		.apply{
+			font-size:200px;
 		}
 	}
 

@@ -1,21 +1,28 @@
+		var intro_bottom = $('.intro h2')[0].getBoundingClientRect().bottom;
+
+		var description_top;
+	   	
 
 
-	   	$(window).scroll( function (){
-			if ($(window).scrollTop() > 900){
 
-			$('.intro').css('display', 'none');
-			$('h1').css('color','orange');
-		
+		$(window).scroll( function(){
+			intro_toggle();
+		});
 
-			} else {
+		$(window).resize(function(){
+			intro_bottom = $('.intro h2')[0].getBoundingClientRect().bottom;
+			intro_toggle();
+		});
 
-			$('.intro').css('display', 'block');
-			$('h1').css('color','blue')
-			
+
+		function intro_toggle (){
+			description_top = $('#description')[0].getBoundingClientRect().top;
+			if (intro_bottom > description_top){
+				$('.intro').css('display', 'none');
+			} else{
+				$('.intro').css('display', 'block');
 			}
-
-		})
-
+		}
 
 			
 
