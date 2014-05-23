@@ -81,9 +81,11 @@ h1 {
 	}
 
 	p, li{
-		font-family:times;
+		font-family: 'Mercury Text G1 A', 'Mercury Text G1 B'; 
+		font-weight: 600; 
+		font-style: normal;
 		font-size:24px;
-		color:blue;
+		color:rgb(30,30,30);
 		/*color:rgb(230,230,230);*/
 	}
 
@@ -150,7 +152,7 @@ h1 {
 	}
 
 	.small-cap{
-		font-family: 'Mercury Text G1 sc A', 'Mercury Text G1 sc B'; font-weight: 400; font-style: normal;
+		font-family: 'Mercury Text G1 sc A', 'Mercury Text G1 sc B'; font-weight: 600; font-style: normal;
 	}
 
 	h3{
@@ -183,7 +185,7 @@ h1 {
 
 	ul li a{
 		display:block;
-		border-bottom:1px dotted blue;
+		border-bottom:2px solid blue;
 		padding:0.125em 0.5em;
 		margin-left:-0.5em;
 
@@ -223,6 +225,7 @@ h1 {
 		font-weight: 700; 
 		font-style: normal;
 		font-size:600px;
+		line-height:1em;
 		margin-top:0.2em;
 		-webkit-box-sizing:border-box;
 	/*	padding:0em 0em;*/
@@ -236,6 +239,31 @@ h1 {
 	.apply:active{
 		-webkit-transform:scale(0.75);
 	}
+
+
+
+	.skill{
+		font-family: 'Tungsten Comp A', 'Tungsten Comp B';
+		font-size:100px;
+		line-height:1em;
+		color:blue; 
+	}
+
+
+
+	.required-skills li:first-child{
+		border-bottom:2px solid black;
+	}
+
+	.required-skills li:nth-child(even){
+		/*color:red;*/
+		margin-left:0px;
+	}
+
+	.required-skills li:nth-child(odd){
+		margin-right:0px;
+	}
+
 
 /* #Page Styles
 ================================================== */
