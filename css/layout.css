@@ -264,6 +264,10 @@ h1 {
 		margin-right:0px;
 	}
 
+	.required-skills li:hover:after{
+		content:"!";
+	}
+
 
 /* #Page Styles
 ================================================== */
