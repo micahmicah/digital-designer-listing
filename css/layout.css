@@ -112,6 +112,7 @@ h1 {
 		border:6px solid blue;
 		padding:0.5em;
 		background:white;
+		display:block;
 	}
 
 	h2:after{
@@ -266,6 +267,10 @@ h1 {
 
 	.required-skills li:hover:after{
 		content:"!";
+	}
+
+	.hidden{
+		display:none;
 	}
 
 

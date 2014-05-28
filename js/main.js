@@ -23,9 +23,11 @@
 		function intro_toggle (){
 			description_top = $('#description')[0].getBoundingClientRect().top;
 			if (intro_bottom > description_top){
-				$('.intro').css('display', 'none');
+				// $('.intro').css('display', 'none');
+				$('.intro h2').addClass('hidden');
 			} else{
-				$('.intro').css('display', 'block');
+				// $('.intro').css('display', 'block');
+				$('.intro h2').removeClass('hidden');
 			}
 		}
 
