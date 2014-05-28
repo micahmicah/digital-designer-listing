@@ -20,26 +20,13 @@
 body{
 	background:#fcfaed;
 	-webkit-font-smoothing:antialiased;
+
 }
 
 ::selection{
 	background:blue;
 	color:white;
 }
-
-h1 { font-family:"Value Serif Regular", helvetica, serif; font-weight:600; font-style:normal; }
-
-/*h1{
-	font-family: 'Tungsten Comp A', 'Tungsten Comp B'; 
-	font-weight: 700; 
-	font-style: normal;
-	font-size:400px;
-	line-height:0.75em;
-	margin:0px;
-	border-bottom:20px solid blue;
-	color:blue;
-	display:inline-block;
-}*/
 
 
 h1 {
@@ -86,14 +73,15 @@ h1 {
 		font-style: normal;
 		font-size:24px;
 		color:rgb(30,30,30);
-		/*color:rgb(230,230,230);*/
 	}
 
 
 	.intro{
 		position:fixed;
 		top:12em;
+		margin:0px auto;
 		-webkit-transform:rotate(-30deg);
+		-moz-transform:rotate(-30deg);
 
 	}
 
@@ -130,6 +118,7 @@ h1 {
 		background:white;
 		top:-0.5em;
 		-webkit-transform:rotate(60deg);
+		-moz-transform:rotate(60deg);
 	}
 
 /*	h2:before{
@@ -167,7 +156,9 @@ h1 {
 		color:blue;
 		font-family: 'Mercury Text G1 sc A', 'Mercury Text G1 sc B'; font-weight: 400; font-style: normal;
 		-webkit-transform:rotate(90deg);
+			-moz-transform:rotate(90deg);
 		-webkit-transform-origin:0% 50%;
+		-moz-transform-origin:0% 50%;
 		pointer-events:none;
 		border-left:2px solid blue;
 		border-right:2px solid blue;
